@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "IOTWatch",
+    "slug": "iotwatch-slug",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocalNetworkUsageDescription": "This app needs local network access to connect to your development server."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "backendUrl": "http://10.158.74.12:5000",
+      "mqtt": {
+        "brokerUrl": "wss://broker.hivemq.com:8884/mqtt",
+        "topic": "ppb/kel22/iot/temperature"
+      }
+    },
+    "plugins": [
+      "expo-font"
+    ]
+  }
+}
